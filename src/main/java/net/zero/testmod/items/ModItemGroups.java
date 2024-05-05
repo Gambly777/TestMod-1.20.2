@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.COSMONITE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.COSMONITE);
                         entries.add(ItemInit.FIRE_ARROW_ITEM);
+                        entries.add(ItemInit.UNDEAD_ARROW_ITEM);
 
                     }).build());
 

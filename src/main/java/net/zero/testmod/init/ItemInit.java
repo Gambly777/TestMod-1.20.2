@@ -1,5 +1,6 @@
 package net.zero.testmod.init;
 
+import net.minecraft.item.ItemGroup;
 import net.zero.testmod.entities.*;
 import net.zero.testmod.items.FireArrowItem;
 import net.minecraft.block.DispenserBlock;
@@ -13,6 +14,7 @@ import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
+import net.zero.testmod.items.UndeadArrowItem;
 
 import static net.zero.testmod.TestMod.MOD_ID;
 
@@ -20,6 +22,7 @@ import static net.zero.testmod.TestMod.MOD_ID;
 public class ItemInit {
 
     public static final FireArrowItem FIRE_ARROW_ITEM = new FireArrowItem(new Item.Settings());
+    public static final UndeadArrowItem UNDEAD_ARROW_ITEM = new UndeadArrowItem(new Item.Settings());
 
     public static void registerDispenserBlockBehavior(Item item){
         DispenserBlock.registerBehavior(item, new ProjectileDispenserBehavior() {
@@ -31,6 +34,11 @@ public class ItemInit {
                     FireArrowEntity arrowEntity = new FireArrowEntity(world, position.getX(), position.getY(), position.getZ());
                     arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
                     return arrowEntity;
+                } else if (item instanceof UndeadArrowItem)
+                {
+                    UndeadArrowEntity arrowEntity = new UndeadArrowEntity(world, position.getX(), position.getY(), position.getZ());
+                    arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
+                    return arrowEntity;
                 } else return null;
             }
         });
@@ -40,8 +48,9 @@ public class ItemInit {
     public static void registerItems()
     {
         Registry.register(Registries.ITEM, new Identifier(MOD_ID, "fire_arrow"), FIRE_ARROW_ITEM);
-
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "undead_arrow"), UNDEAD_ARROW_ITEM);
 
         registerDispenserBlockBehavior(FIRE_ARROW_ITEM);
+        registerDispenserBlockBehavior(UNDEAD_ARROW_ITEM);
     }
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "testmod:fire_arrow"
+    "testmod:fire_arrow",
+    "testmod:undead_arrow"
   ]
 }
