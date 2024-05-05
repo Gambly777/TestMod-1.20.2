@@ -1,6 +1,5 @@
 package net.zero.testmod.init;
 
-import net.minecraft.item.ItemGroup;
 import net.zero.testmod.entities.*;
 import net.zero.testmod.items.ElderArrowItem;
 import net.zero.testmod.items.FireArrowItem;

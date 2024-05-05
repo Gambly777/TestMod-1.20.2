@@ -10,19 +10,12 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.Difficulty;
 import net.zero.testmod.init.ItemInit;
 import net.zero.testmod.init.EntityInit;
-import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.hit.EntityHitResult;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 
 import static net.minecraft.entity.EntityType.*;
 

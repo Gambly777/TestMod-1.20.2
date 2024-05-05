@@ -2,22 +2,12 @@ package net.zero.testmod.entities;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.mob.ZoglinEntity;
-import net.minecraft.entity.mob.ZombieVillagerEntity;
-import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import net.zero.testmod.init.EntityInit;
 import net.zero.testmod.init.ItemInit;
-
-import static net.minecraft.entity.EntityType.*;
 
 public class ElderArrowEntity
         extends PersistentProjectileEntity {
