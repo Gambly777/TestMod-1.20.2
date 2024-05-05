@@ -39,7 +39,7 @@ public class UndeadArrowEntity
     }
 
     public UndeadArrowEntity(World world, LivingEntity owner) {
-        super( EntityInit.UNDEAD_ARROW, owner, world);
+        super(EntityInit.UNDEAD_ARROW, owner, world);
     }
 
 

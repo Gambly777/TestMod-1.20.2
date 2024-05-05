@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COSMONITE);
                         entries.add(ItemInit.FIRE_ARROW_ITEM);
                         entries.add(ItemInit.UNDEAD_ARROW_ITEM);
+                        entries.add(ItemInit.ELDER_ARROW_ITEM);
 
                     }).build());
 

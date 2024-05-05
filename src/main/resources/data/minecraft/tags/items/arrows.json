@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "testmod:fire_arrow",
+    "testmod:elder_arrow",
     "testmod:undead_arrow"
   ]
 }

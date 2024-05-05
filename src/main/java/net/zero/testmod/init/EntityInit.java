@@ -15,6 +15,8 @@ public class EntityInit {
 
     public static EntityType<FireArrowEntity> FIRE_ARROW;
     public static EntityType<UndeadArrowEntity> UNDEAD_ARROW;
+    public static EntityType<ElderArrowEntity> ELDER_ARROW;
+
 
     private static <T extends Entity> EntityType<T> register(String s, EntityType<T> entityType) {
         return Registry.register(Registries.ENTITY_TYPE, MOD_ID + ":" + s, entityType);
@@ -27,6 +29,7 @@ public class EntityInit {
     public static void init() {
         FIRE_ARROW = register("fire_arrow", createArrowEntityType(FireArrowEntity::new));
         UNDEAD_ARROW = register("undead_arrow", createArrowEntityType(UndeadArrowEntity::new));
+        ELDER_ARROW = register("elder_arrow", createArrowEntityType(ElderArrowEntity::new));
     }
 
 }

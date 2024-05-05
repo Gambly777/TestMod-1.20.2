@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.zero.testmod.init.EntityInit;
 import net.zero.testmod.client.render.FireArrowEntityRenderer;
 import net.zero.testmod.client.render.UndeadArrowEntityRenderer;
+import net.zero.testmod.client.render.ElderArrowEntityRenderer;
 
 public class TestModClient implements ClientModInitializer {
     @Override
@@ -12,5 +13,6 @@ public class TestModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(EntityInit.FIRE_ARROW, FireArrowEntityRenderer::new);
         EntityRendererRegistry.register(EntityInit.UNDEAD_ARROW, UndeadArrowEntityRenderer::new);
+        EntityRendererRegistry.register(EntityInit.ELDER_ARROW, ElderArrowEntityRenderer::new);
     }
 }
